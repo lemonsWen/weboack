@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+		<%= compilation.assets[htmlWebpackPlugin.files.chunks.main.entry.substr(htmlWebpackPlugin.files.publicPath.length)].source() %>
+	</script>
+</head>
+<body>
+	<!-- 我是一行注射 -->
+</body>
+</html>
